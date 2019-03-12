@@ -1,0 +1,13 @@
+<% if @stories.blank? %>
+  <p>No stories yet!
+  <p>Why don't you <%= link_to 'write one?', new_story_path %>
+<% end %>
+
+<ul>
+<% @stories.each do |story| -%>
+  <li>
+    <%= link_to story.title || "Untitled", story_path(story) %>
+    by <%= story.author || "Anonymous" %>
+  </li>
+<% end -%>
+</ul>

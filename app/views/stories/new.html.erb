@@ -1,0 +1,15 @@
+<%= form_for @story do %>
+<p>
+  <label for="title">Title:</label>
+  <input type="text" name="story[author]" class="author" value="What's your name?"/>
+<p>
+  <label for="title">Title:</label>
+  <input type="text" name="story[title]" class="title" value="What's your story called?"/>
+<p>
+  <label for="plot">Plot:</label>
+  <textarea name="story[plot]" class="plot">Summarize what your story is about</textarea>
+
+<p>
+  <input type="submit" value="Save" style="font-size: 1em;" />
+
+<% end %>

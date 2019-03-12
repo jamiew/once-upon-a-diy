@@ -13,3 +13,55 @@
  *= require_tree .
  *= require_self
  */
+
+html {
+  background: url("wallpaper.jpg") repeat;
+}
+body {
+  font-family: monospace;
+  font-size: 3em;
+  width: 25em;
+  margin: 0 auto;
+  background: #fff;
+  padding: 0 1em 1em 1em;
+}
+input, textarea, a.button {
+  border: 1px solid #000;
+  font-size: 0.5em;
+}
+input[type='text'] {
+  width: 100%;
+  padding: 5px 5px;
+}
+
+textarea.plot {
+  width: 100%;
+  height: 15em;
+}
+
+a {
+  color: #000;
+}
+
+a.button {
+  padding: 0.25em 0.5em;
+  background-color: #eee;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+ul.character {
+  margin: 0;
+  padding: 0;
+}
+ul.character li {
+  list-style: none;
+  margin-top: 0.4em;
+}
+
+textarea.story {
+  line-height: 1.4em;
+  width: 100%;
+  height: 40em;
+  background: url("paper-background.png") repeat;
+}
