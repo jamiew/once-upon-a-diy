@@ -1,24 +1,6 @@
-# README
+Once Upon A Time
+================
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Working with my daughter on a simple app for writing stories
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+First it was mostly HTML, now it has some Rails sprinkled in!
