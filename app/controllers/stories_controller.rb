@@ -16,7 +16,7 @@ class StoriesController < ApplicationController
     @story = Story.new(allowed_params)
     if @story.save
       flash[:notice] = "Story created!"
-      redirect_to story_path(@story)
+      redirect_to new_story_character_path(@story)
     else
       flash[:error] = "Failure to save story :("
       render :new
@@ -24,6 +24,10 @@ class StoriesController < ApplicationController
   end
 
   def edit
+    @story = Story.find(params[:id])
+  end
+
+  def edit_body
     @story = Story.find(params[:id])
   end
 

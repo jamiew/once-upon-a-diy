@@ -1,0 +1,29 @@
+<h2>Add Character</h2>
+
+<%= form_for [@story, @character] do |form| %>
+
+<ul class="character">
+  <li> Name <input type="text" name="character[name]" value="Example text"/>
+  <li>
+    <input type="radio" name="gender" value="character[girl]" checked> Girl
+    <input type="radio" name="gender" value="character[boy]"> Boy
+    <input type="radio" name="gender" value="character[other]"> Other
+  <li> Hobbies <input type="text" name="character[hobbies]" value="Soccer, badminton"/>
+  <li> Clothes <input type="text" name="character[clothes]" value="Red shirt, blue pants, pink underwear"/>
+  <li> Traits <input type="text" name="character[traits]" value="Kind,brave, smart"/>
+  <li> Fun facts <input type="text" name="character[fun_facts]" value="Her dad faught in the war and she lives with her mom, brother and maid"/>
+  <li> Eye color <input type="text" name="character[eye_color]" value="Hazel"/>
+  <li> Hair <input type="text" name="character[hair]" value="Curly and red with frizz on the top"/>
+  <li> Location <input type="text" name="character[location]" value="New York"/>
+  <li> Special abilities (Optional) <input type="text" name="character[special_abilities]" value="She can fly"/>
+</ul>
+
+<p>
+  <!-- <a class="button" href="">I have another character</a> -->
+  <%= form.submit value: "I have another character" %>
+
+<p>
+  <!-- <a class="button" href="story.html">Next</a> -->
+  <%= form.submit value: "All done" %>
+
+<% end -%>

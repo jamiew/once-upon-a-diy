@@ -1,0 +1,10 @@
+<%= form_for @story do |form| %>
+  <textarea class="body" name="story[body]">
+  Here is your story.... start writing!
+
+  </textarea>
+
+  <p>
+    <%= form.submit value: 'Next' %>
+
+<% end -%>
