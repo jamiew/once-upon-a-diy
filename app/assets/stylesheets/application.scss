@@ -15,7 +15,7 @@
  */
 
 html {
-  background: url("wallpaper.jpg") repeat;
+  background: image_url("wallpaper.jpg") repeat;
 }
 body {
   font-family: monospace;
@@ -63,5 +63,5 @@ textarea.body {
   line-height: 1.4em;
   width: 100%;
   height: 40em;
-  background: url("paper-background.png") repeat;
+  background: image_url("paper-background.png") repeat;
 }
